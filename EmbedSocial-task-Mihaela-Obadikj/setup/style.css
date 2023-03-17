@@ -1,0 +1,187 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  background: #ffffff;
+  margin: 15px;
+  width: 340px;
+}
+
+.preview {
+  background: #f9fafd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.layout-placeholder {
+  color: #464b5b;
+  font-size: 18px;
+}
+
+.accordion {
+  background: #e6ebff;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+.accordion-title {
+  color: #0033ff;
+  font-weight: 800;
+  font-size: 18px;
+  margin: 0;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+input {
+  box-sizing: border-box;
+}
+
+.form-control {
+  background-color: #ffffff;
+  border: 1px solid #d6dae4;
+  border-radius: 3px;
+  padding: 6px 12px;
+  height: 38px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 14px;
+}
+
+input[type="radio"] {
+  margin: 0;
+  width: 15px;
+  height: 15px;
+}
+
+.radio-select {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  margin: 50px auto;
+  max-width: 1040px;
+  padding: 20px;
+}
+.product {
+  padding: 10px;
+  margin-top: 50px;
+  width: 500px;
+  height: 800px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.product img {
+  width: 470px;
+  display: block;
+  margin: 10px;
+}
+
+#profilna {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.red {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.red p {
+  flex: 1;
+}
+.name {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.date {
+  margin-top: 0px;
+  margin-left: 10px;
+}
+
+.ednakolona {
+  display: flex;
+  flex-direction: column;
+}
+
+#logo {
+  margin-left: 45px;
+}
+
+#load-more {
+  width: 220px;
+  height: 55px;
+  margin-bottom: 2px;
+  padding: 5px;
+  background-color: rgb(32, 162, 255);
+  border: none;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+  border-radius: 3px;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  color: #ffffff;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 30px;
+}
+
+#cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 950px;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .card {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .card {
+    width: calc(100% / var(--number-of-columns));
+  }
+}
